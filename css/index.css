@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    font: 14px/150% helvetica,"微软雅黑","microsoft yahei",Verdana,Lucida,arial,sans-serif,"黑体";
+
+}
+
+ul,ol,dl{
+    list-style: none;
+}
+
+input,img{
+    vertical-align: 0;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body,a{
+    color: #333;
+}
+
+body{
+    min-width: 1200px;
+}
+
+#headerBar{
+    height: 60px;
+
+}
+
+#headerBar a:hover{
+    color: white;
+}
+
+.headerOut{
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(25,35,50,.98);
+}
+
+.headerContent{
+    min-width: 1092px;
+    height: 60px;
+    padding: 0 88px 0 20px;
+    position: relative;
+    font-size: 15px;
+}
+
+.headerContent dl{
+    float: left;
+}
+
+.headerContent dl dd{
+    float: left;
+    line-height: 60px;
+}
+
+.headerContent dl dd a{
+    color: #c8c8c8;
+    line-height: 60px;
+    margin-right: 30px;
+    position: relative;
+    font-size: 15px;
+}
+
+.headerContent dl:after{
+    display: block;
+    clear: both;
+    content: '';
+    font-size: 0;
+    height: 0;
+    zoom: 1;
+}
+
+.headerContent h1{
+    width: 136px;
+    height: 42px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -21px 0 0 -68px;
+
+}
+
+.headerContent h1 a {
+    background: url(../img/head.png) no-repeat;
+    width: 136px;
+    height: 42px;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+}
+
+.headRight{
+    float: right;
+}
+
+.headRight:after{
+    display: block;
+    clear: both;
+    content: '';
+    font-size: 0;
+    height: 0;
+    zoom: 1;
+}
+
+.headRight a{
+    padding: 18px;
+}
+
+.headRight>div{
+    float: left;
+    height: 60px;
+    position: relative;
+}
+
+.headRight .app{
+    position: relative;
+}
+
+.headRight .app a{
+    display: inline-block;
+    color: #c8c8c8;
+    margin-right: 15px;
+}
+
+.headRight .app a em{
+    display: inline-block;
+    background: url(../img/head.png) -54px -45px no-repeat;
+    width: 17px;
+    height: 26px;
+    opacity: .7;
+    margin-right: 5px;
+}
+
+.headRight .app a b{
+    background: url(../img/head.png) -140px 0 no-repeat;
+    width: 7px;
+    height: 4px;
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    margin-top: -2px;
+    opacity: .7;
+}
+
+.headRight i{
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-left: 1px solid #141c28;
+    border-right: 1px solid #303947;
+    height: 60px;
+}
+
+.headRight .login{
+    height: 60px;
+    line-height: 60px;
+}
+
+.headRight .login a{
+
+    display: inline-block;
+    color: #c8c8c8;
+    margin-right: 15px;
+}
+
+.headRight .login b{
+    position: absolute;
+    top: 22px;
+    left: 70px;
+    width: 0;
+    height: 16px;
+    border-left: 1px solid #303947;
+}
+
+.headRight .shopping{
+    background: #e83729;
+    height: 64px;
+    width: 68px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 2;
+}
+
+.headRight .shopping em{
+    background: url(../img/head.png) 0 -45px no-repeat;
+    width: 30px;
+    height: 24px;
+    position: absolute;
+    left: 19px;
+    top: 19px;
+}
+
+.headRight .shopping b{
+    background: #fff;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 13px;
+    color: #e83729;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 40px;
+    top: 9px;
+    border: 3px solid #e83729;
+}
+
+.homeContent{
+
+    min-width: 1200px;
+}
+
+.carousel{
+    margin: 0 auto;
+    position: relative;
+    width: 1200px;
+    height: 360px;
+    overflow: hidden;
+}
+
+.carousel .imgWrap{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1200px;
+    height: 360px;
+}
+
+.carousel .imgWrap div{
+    float: left;
+    width: 1200px;
+    height: 360px;
+    z-index: 0;
+    opacity: 0;
+}
+
+.carousel ul{
+    position: absolute;
+    right: 30px;
+    bottom: 12px;
+}
+
+.carousel ul:after{
+    display: block;
+    clear: both;
+    content: '';
+    font-size: 0;
+    height: 0;
+    zoom: 1;
+}
+
+.carousel ul li{
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin: 0 5px;
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    opacity: 0.7;
+    filter: Alpha(Opacity=70);
+}
+
+.carousel ul li.bg{
+    opacity: 1;
+}
+
+.carousel>a{
+    background-image: url("../img/carouselBtnBg.png");
+    width: 48px;
+    height: 102px;
+    opacity: 0.8;
+}
+
+.carousel>a:hover{
+    opacity: 1;
+}
+
+.carousel .btnLeft{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -51px;
+
+}
+
+.carousel>a i{
+    background: url(../img/index24.png) no-repeat;
+    width: 21px;
+    height: 47px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -24px 0 0 -11px;
+    opacity: .6;
+}
+
+.carousel>a:hover i{
+    opacity: 1;
+}
+
+.carousel .btnRight{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -51px;
+
+}
+
+.carousel .btnRight i{
+    background-position: -21px 0;
+}
