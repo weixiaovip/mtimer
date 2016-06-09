@@ -69,6 +69,36 @@ body{
     font-size: 15px;
 }
 
+
+.headerContent dl dd a i,.app>a>i{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-bottom: 5px solid #fff;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    position: absolute;
+    left: 50%;
+    bottom: -22px;
+    margin-left: -7px;
+    display: none;
+}
+
+.headerContent dl dd a i.show{
+    display: block;
+}
+
+.headerContent dl dd a em{
+    background: url(../img/head.png) -165px 0 no-repeat;
+    width: 28px;
+    height: 14px;
+    position: absolute;
+    right: -26px;
+    top: -6px;
+    font-size: 0;
+    line-height: 0;
+}
+
 .headerContent dl:after{
     display: block;
     clear: both;
@@ -101,7 +131,8 @@ body{
     float: right;
 }
 
-.headRight:after{
+
+.headRight:after,.headbar:after{
     display: block;
     clear: both;
     content: '';
@@ -115,19 +146,54 @@ body{
 }
 
 .headRight>div{
-    float: left;
+    float: right;
     height: 60px;
     position: relative;
+}
+
+.headRight .headtool{
+    position: relative;
+    padding: 0 18px;
+    height: 60px;
+    line-height: 60px;
+
+}
+
+.headRight .headtool a{
+    padding: 0;
+    line-height: 60px;
+}
+
+.headtool .headzoom em {
+    background: url(../img/head.png) -75px -45px no-repeat;
+    width: 20px;
+    height: 20px;
+    opacity: .7;
+
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+.headtool:hover .headzoom em{
+    opacity: 1;
 }
 
 .headRight .app{
     position: relative;
 }
 
-.headRight .app a{
+.headRight .app .headqr{
     display: inline-block;
     color: #c8c8c8;
     margin-right: 15px;
+}
+
+.headRight .app:hover>a>i{
+    display: block;
+    bottom: 0;
+
 }
 
 .headRight .app a em{
@@ -150,10 +216,46 @@ body{
     opacity: .7;
 }
 
-.headRight i{
+.headRight .app a:hover em,.headRight .app a:hover b{
+    opacity: 1;
+}
+
+.qrcode_tip{
+    position: absolute;
+    top: 60px;
+    width: 125px;
+    right: -20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 5px rgba(0,0,0,.25);
+    background-color: #fff;
+    z-index: 5;
+    display: none;
+}
+
+.headRight .app:hover .qrcode_tip{
+    display: block;
+}
+
+.qrcode_tip a{
+    padding: 0;
+}
+.qrcode_tip>a>i{
+    background: url(../img/head.png) 0 -195px no-repeat;
+    width: 115px;
+    height: 115px;
+    margin: 0 auto;
+    display: block;
+}
+
+.qrcode_tip p {
+    margin-top: 10px;
+    line-height: 1;
+}
+
+.headRight i.line{
     position: absolute;
     left: 0;
-    top: 0;
     border-left: 1px solid #141c28;
     border-right: 1px solid #303947;
     height: 60px;
@@ -214,6 +316,27 @@ body{
     border: 3px solid #e83729;
 }
 
+.shopping .shopping-tip {
+    width: 350px;
+    border-top: 3px solid #e83729;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 3px 5px rgba(0,0,0,.25);
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+
+.shopping:hover .shopping-tip{
+    display: block;
+}
+
+.shopping .shopping-tip .tips {
+    text-align: center;
+    color: #999;
+    padding: 100px 0;
+}
+
 .homeContent{
 
     min-width: 1200px;
@@ -224,6 +347,7 @@ body{
     position: relative;
     width: 1200px;
     height: 360px;
+    cursor: pointer;
     overflow: hidden;
 }
 
@@ -236,7 +360,9 @@ body{
 }
 
 .carousel .imgWrap div{
-    float: left;
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 1200px;
     height: 360px;
     z-index: 0;
@@ -247,6 +373,7 @@ body{
     position: absolute;
     right: 30px;
     bottom: 12px;
+    z-index: 2;
 }
 
 .carousel ul:after{
@@ -279,6 +406,7 @@ body{
     width: 48px;
     height: 102px;
     opacity: 0.8;
+    z-index: 2;
 }
 
 .carousel>a:hover{
