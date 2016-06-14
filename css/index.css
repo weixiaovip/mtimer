@@ -26,9 +26,9 @@ body{
     min-width: 1200px;
 }
 
+/*固定导航栏*/
 #headerBar{
     height: 60px;
-
 }
 
 #headerBar a:hover{
@@ -36,7 +36,7 @@ body{
 }
 
 .headerOut{
-    z-index: 5;
+    z-index: 10;
     position: fixed;
     top: 0;
     left: 0;
@@ -342,6 +342,143 @@ body{
     min-width: 1200px;
 }
 
+/*搜索栏*/
+.tophead{
+    height: 65px;
+    padding-top: 25px;
+    position: relative;
+    z-index: 5;
+    opacity: 1;
+    background: url(../img/tophead_url.jpg) center center no-repeat;
+}
+
+.tophead .mask{
+    display: block;
+    height: 90px;
+    width: 1200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.tophead .topsearch{
+    border: 1px solid #e0e0e0;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    width: 500px;
+    left: 0;
+    display: block;
+    z-index: 4;
+    height: 38px;
+    border-radius: 20px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.tophead .topsearch .selectsearch{
+    position: relative;
+    line-height: 38px;
+    width: 80px;
+    text-align: center;
+    left: 0;
+    top: 0;
+    color: #999;
+    /*overflow: hidden;*/
+}
+
+.tophead .topsearch .selectsearch>span{
+    width: 45px;
+    font-weight: 400;
+}
+
+.tophead .topsearch .selectsearch>i{
+    position: absolute;
+    left: 61px;
+    top: 17px;
+    background: url(../img/head.png) -152px 0 no-repeat;
+    width: 11px;
+    height: 7px;
+}
+
+.tophead .topsearch .selectsearch>em{
+    position: absolute;
+    top: 13px;
+    right: -3px;
+
+    width: 1px;
+    height: 14px;
+    background-color: #dbdbdb;
+}
+
+.topsearch .selectsearch .selectshow{
+    position: absolute;
+    background: #fff;
+    width: 95px;
+    left: 0;
+    top: 38px;
+    overflow: hidden;
+    display: none;
+}
+
+.topsearch .selectsearch:hover .selectshow{
+    display: block;
+}
+.topsearch .selectsearch .selectshow li{
+
+    text-align: center;
+    line-height: 2.4;
+    border-top: 1px solid #eee;
+    cursor: pointer;
+}
+.topsearch .selectsearch .selectshow li:hover{
+    background: #e5f2fc;
+    color: #267dd7;
+}
+
+.topsearch  input.text{
+    position: absolute;
+    top: 0;
+    left: 100px;
+    background: 0 0;
+    width: 320px;
+    line-height: 26px;
+    padding: 7px 0;
+    border: none;
+    font-size: 13px;
+    color: #a5a5a5;
+}
+
+.topsearch a.button{
+    position: absolute;
+    right: 3px;
+    top: 3px;
+
+    width: 54px;
+    height: 32px;
+    border-radius: 20px;
+}
+
+.topsearch a.button:hover{
+    background: #1e7dd7;
+}
+
+.topsearch a.button>i{
+    position: absolute;
+    background: url(../img/head.png) -115px -45px no-repeat;
+    width: 19px;
+    height: 19px;
+    left: 50%;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+}
+
+.topsearch a.button:hover >i{
+    background-position: -134px -45px;
+}
+
+/*轮播图*/
 .carousel{
     margin: 0 auto;
     position: relative;
@@ -446,4 +583,67 @@ body{
 
 .carousel .btnRight i{
     background-position: -21px 0;
+}
+
+/*今日热点*/
+.hotnews{
+    padding: 45px 0 25px;
+}
+
+.hotnews .customtitle{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.customnav {
+    width: 1200px;
+    margin: 0 auto 19px;
+    position: relative;
+    text-align: center;
+    height: 22px;
+}
+
+.customnav i {
+    background: #e5e5e5;
+    width: 100%;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -2px;
+}
+
+.customnav dd, .customnav dl {
+    display: inline-block;
+    background: #fff;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.customnav dl{
+    position: relative;
+    background: #fff;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.customnav dd {
+    padding: 0 25px;
+    font-size: 16px;
+    line-height: 1.1;
+    border-left: 1px solid #e5e5e5;
+    margin-left: -1px;
+}
+
+.customnav dd a{
+    font-size: 16px;
+    line-height: 1.1;
+}
+
+.customnav dd a:hover{
+    color: #1970c8;
 }
