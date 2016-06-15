@@ -14,6 +14,23 @@ input,img{
     outline: none;
 }
 
+img {
+    background: url(../img/autoimg.png) center no-repeat #f2f2f2;
+    background-size: 50% auto;
+    vertical-align: middle;
+}
+
+/*h3 {*/
+    /*display: block;*/
+    /*font-size: 1.17em;*/
+    /*-webkit-margin-before: 1em;*/
+    /*-webkit-margin-after: 1em;*/
+    /*-webkit-margin-start: 0px;*/
+    /*-webkit-margin-end: 0px;*/
+    /*font-weight: bold;*/
+/*}*/
+
+
 a{
     text-decoration: none;
 }
@@ -646,4 +663,110 @@ body{
 
 .customnav dd a:hover{
     color: #1970c8;
+}
+
+.newslist {
+    margin: 0 auto;
+    width: 1200px;
+    overflow: hidden;
+}
+
+.newslist ul{
+    width: 1220px;
+}
+
+.newslist ul:after{
+    clear: both;
+    display: block;;
+    content: '';
+    zoom: 1;
+}
+.newslist ul li{
+    width: 285px;
+    margin-right: 20px;
+    float: left;
+    padding-bottom: 23px;
+}
+
+.newsitem .imgbox {
+    position: relative;
+    display: block;
+}
+
+.newsitem .imgbox .tag {
+    background: #eb321e;
+    color: #fff;
+    font-size: 13px;
+    line-height: 22px;
+    padding: 0 11px;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+}
+
+.newsitem h3 {
+
+    height: 21px;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.newsitem h3 a {
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+}
+
+.newsitem .describe {
+    padding-top: 3px;
+}
+
+.newsitem .describe a {
+    color: #888;
+    display: block;
+
+    white-space: nowrap;/*强制让文字在一行显示*/
+    text-overflow: ellipsis;/*当内联内容溢出块容器时，将溢出部分替换为（...）。 */
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.newsitem .imgbox .video {
+    background: url(../img/index24.png) 0 -47px no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    font-size: 0;
+    line-height: 0;
+}
+
+.newsitem .imgbox:hover .video {
+    opacity: .7;
+    filter: alpha(opacity=70);
+}
+
+.viewmore {
+    text-align: center;
+    padding-top: 8px;
+}
+
+.viewmore a {
+    width: 158px;
+    line-height: 35px;
+    border: 1px solid #666;
+    color: #666;
+    display: inline-block;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.viewmore a:hover {
+    background: #1e7dd7;
+    border: 1px solid #1e7dd7;
+    color: #fff;
 }
