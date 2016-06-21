@@ -126,9 +126,9 @@
                 return c/2*((t-=2)*t*(((s*=(1.525))+1)*t + s) + 2) + b;
             }
         },
-        zfBounce: {//指数衰减的反弹缓动。
+        Bounce: {//指数衰减的反弹缓动。
             easeIn: function(t,b,c,d){
-                return c - zhufengEffect.zfBounce.easeOut(d-t, 0, c, d) + b;
+                return c - myEffect.Bounce.easeOut(d-t, 0, c, d) + b;
             },
             easeOut: function(t,b,c,d){
                 if ((t/=d) < (1/2.75)) {
@@ -142,8 +142,8 @@
                 }
             },
             easeInOut: function(t,b,c,d){
-                if (t < d/2) return zhufengEffect.zfBounce.easeIn(t*2, 0, c, d) * .5 + b;
-                else return zhufengEffect.zfBounce.easeOut(t*2-d, 0, c, d) * .5 + c*.5 + b;
+                if (t < d/2) return myEffect.Bounce.easeIn(t*2, 0, c, d) * .5 + b;
+                else return myEffect.Bounce.easeOut(t*2-d, 0, c, d) * .5 + c*.5 + b;
             }
         }
     }
@@ -151,7 +151,7 @@
     function move(curEle,oTarget,duration,effect,callback) {
         //运动公式
         var tmpEffect = myEffect.Linear;
-        var ary = ["Linear", "Elastic-easeOut", "Back-easeOut", "Bounce-easeOut", "Expo-easeIn"];
+        var ary = ["Linear", "Elastic-easeOut", "Back-easeOut", "Bounce-easeOut", "Expo-easeIn", "Sine-easeIn"];
         if(typeof effect === 'number')
         {
             var str = ary[effect % ary.length];

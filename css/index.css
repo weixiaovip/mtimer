@@ -35,323 +35,16 @@ a{
     text-decoration: none;
 }
 
+a:hover {
+    color: #1f7dd7;
+}
+
 body,a{
     color: #333;
 }
 
 body{
     min-width: 1200px;
-}
-
-/*固定导航栏*/
-#headerBar{
-    height: 60px;
-}
-
-#headerBar a:hover{
-    color: white;
-}
-
-.headerOut{
-    z-index: 10;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(25,35,50,.98);
-}
-
-.headerContent{
-    min-width: 1092px;
-    height: 60px;
-    padding: 0 88px 0 20px;
-    position: relative;
-    font-size: 15px;
-}
-
-.headerContent dl{
-    float: left;
-}
-
-.headerContent dl dd{
-    float: left;
-    line-height: 60px;
-}
-
-.headerContent dl dd a{
-    color: #c8c8c8;
-    line-height: 60px;
-    margin-right: 30px;
-    position: relative;
-    font-size: 15px;
-}
-
-
-.headerContent dl dd a i,.app>a>i{
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    border-bottom: 5px solid #fff;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    position: absolute;
-    left: 50%;
-    bottom: -22px;
-    margin-left: -7px;
-    display: none;
-}
-
-.headerContent dl dd a i.show{
-    display: block;
-}
-
-.headerContent dl dd a em{
-    background: url(../img/head.png) -165px 0 no-repeat;
-    width: 28px;
-    height: 14px;
-    position: absolute;
-    right: -26px;
-    top: -6px;
-    font-size: 0;
-    line-height: 0;
-}
-
-.headerContent dl:after{
-    display: block;
-    clear: both;
-    content: '';
-    font-size: 0;
-    height: 0;
-    zoom: 1;
-}
-
-.headerContent h1{
-    width: 136px;
-    height: 42px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin: -21px 0 0 -68px;
-
-}
-
-.headerContent h1 a {
-    background: url(../img/head.png) no-repeat;
-    width: 136px;
-    height: 42px;
-    display: block;
-    font-size: 0;
-    line-height: 0;
-}
-
-.headRight{
-    float: right;
-}
-
-
-.headRight:after,.headbar:after{
-    display: block;
-    clear: both;
-    content: '';
-    font-size: 0;
-    height: 0;
-    zoom: 1;
-}
-
-.headRight a{
-    padding: 18px;
-}
-
-.headRight>div{
-    float: right;
-    height: 60px;
-    position: relative;
-}
-
-.headRight .headtool{
-    position: relative;
-    padding: 0 18px;
-    height: 60px;
-    line-height: 60px;
-
-}
-
-.headRight .headtool a{
-    padding: 0;
-    line-height: 60px;
-}
-
-.headtool .headzoom em {
-    background: url(../img/head.png) -75px -45px no-repeat;
-    width: 20px;
-    height: 20px;
-    opacity: .7;
-
-    display: inline-block;
-    position: relative;
-    zoom: 1;
-    vertical-align: middle;
-}
-
-.headtool:hover .headzoom em{
-    opacity: 1;
-}
-
-.headRight .app{
-    position: relative;
-}
-
-.headRight .app .headqr{
-    display: inline-block;
-    color: #c8c8c8;
-    margin-right: 15px;
-}
-
-.headRight .app:hover>a>i{
-    display: block;
-    bottom: 0;
-
-}
-
-.headRight .app a em{
-    display: inline-block;
-    background: url(../img/head.png) -54px -45px no-repeat;
-    width: 17px;
-    height: 26px;
-    opacity: .7;
-    margin-right: 5px;
-}
-
-.headRight .app a b{
-    background: url(../img/head.png) -140px 0 no-repeat;
-    width: 7px;
-    height: 4px;
-    position: absolute;
-    right: 18px;
-    top: 50%;
-    margin-top: -2px;
-    opacity: .7;
-}
-
-.headRight .app a:hover em,.headRight .app a:hover b{
-    opacity: 1;
-}
-
-.qrcode_tip{
-    position: absolute;
-    top: 60px;
-    width: 125px;
-    right: -20px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 3px 5px rgba(0,0,0,.25);
-    background-color: #fff;
-    z-index: 5;
-    display: none;
-}
-
-.headRight .app:hover .qrcode_tip{
-    display: block;
-}
-
-.qrcode_tip a{
-    padding: 0;
-}
-.qrcode_tip>a>i{
-    background: url(../img/head.png) 0 -195px no-repeat;
-    width: 115px;
-    height: 115px;
-    margin: 0 auto;
-    display: block;
-}
-
-.qrcode_tip p {
-    margin-top: 10px;
-    line-height: 1;
-}
-
-.headRight i.line{
-    position: absolute;
-    left: 0;
-    border-left: 1px solid #141c28;
-    border-right: 1px solid #303947;
-    height: 60px;
-}
-
-.headRight .login{
-    height: 60px;
-    line-height: 60px;
-}
-
-.headRight .login a{
-
-    display: inline-block;
-    color: #c8c8c8;
-    margin-right: 15px;
-}
-
-.headRight .login b{
-    position: absolute;
-    top: 22px;
-    left: 70px;
-    width: 0;
-    height: 16px;
-    border-left: 1px solid #303947;
-}
-
-.headRight .shopping{
-    background: #e83729;
-    height: 64px;
-    width: 68px;
-    position: absolute;
-    top: 0;
-    right: 20px;
-    z-index: 2;
-}
-
-.headRight .shopping em{
-    background: url(../img/head.png) 0 -45px no-repeat;
-    width: 30px;
-    height: 24px;
-    position: absolute;
-    left: 19px;
-    top: 19px;
-}
-
-.headRight .shopping b{
-    background: #fff;
-    width: 18px;
-    height: 18px;
-    line-height: 18px;
-    font-size: 13px;
-    color: #e83729;
-    text-align: center;
-    border-radius: 50%;
-    position: absolute;
-    left: 40px;
-    top: 9px;
-    border: 3px solid #e83729;
-}
-
-.shopping .shopping-tip {
-    width: 350px;
-    border-top: 3px solid #e83729;
-    right: 0;
-    background: #fff;
-    box-shadow: 0 3px 5px rgba(0,0,0,.25);
-    position: absolute;
-    top: 60px;
-    display: none;
-}
-
-.shopping:hover .shopping-tip{
-    display: block;
-}
-
-.shopping .shopping-tip .tips {
-    text-align: center;
-    color: #999;
-    padding: 100px 0;
 }
 
 .homeContent{
@@ -769,4 +462,1760 @@ body{
     background: #1e7dd7;
     border: 1px solid #1e7dd7;
     color: #fff;
+}
+
+.advertisement{
+    margin: 0 auto;
+    width: 1200px;
+    height: 90px;
+}
+
+.advertisement>a{
+    width: 100%;
+    height: 100%;
+}
+
+.advertisement>a img{
+    width: 1200px;
+    height: 90px;
+}
+
+.ticketregion{
+    margin: 0 auto;
+    padding: 10px 0 50px;
+    width: 1200px;
+}
+
+.ticketregion .ticketList{
+    border-bottom: 1px solid #e6e6e6;
+    text-align: center;
+    margin-bottom: 30px;
+    height: 46px;
+}
+
+.ticketregion .ticketList li{
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 2px 0;
+    margin: 0 40px;
+    border-bottom: 3px solid #fff;
+    position: relative;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+.ticketregion .ticketList li.cur{
+    color: #fc6921;
+    border-bottom: 3px solid #fc6921;
+}
+
+.ticketregion .ticketList li i{
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.tab-box{
+    height: 348px;
+}
+
+.tab-box>div{
+    height: 276px;
+    position: relative;
+    display: none;
+}
+
+.tab-box>div.isSelect{
+    display: block;
+}
+
+.tab-box>div .i_quickticket{
+    position: relative;
+    width: 175px;
+    border-right: 1px solid #e6e6e6;
+    padding: 50px 20px 0 0;
+    z-index: 2;
+    float: left;
+    /*background-color: #8b7d52;*/
+}
+
+.tab-box>div .i_quickticket .i_citybox{
+    height: 46px;
+    width: 168px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 11;
+    cursor: pointer;
+    text-align: center;
+    line-height: 46px;
+    vertical-align: middle;
+}
+
+.i_citybox i{
+    position: absolute;
+    top: 12px;
+    left: 40px;
+    background: url(../img/index24.png) -42px 0 no-repeat;
+    width: 16px;
+    height: 20px;
+    margin-right: 9px;
+}
+
+.i_citybox span{
+    font-size: 18px;
+}
+
+.i_quickticket .i_citybox em{
+    position: absolute;
+    top: 19px;
+    left: 100px;
+    background: url(../img/index24.png) -58px 0 no-repeat;
+    width: 14px;
+    height: 8px;
+    margin-left: 12px;
+}
+
+.i_quickticket .selectMovie,.selectCinema,.selectTime{
+    /*background: #fff;*/
+    position: relative;
+    width: 131px;
+    height: 34px;
+    border: 1px solid #b9b9b9;
+    border-radius: 1px;
+    z-index: 9;
+    cursor: pointer;
+    margin-bottom: 18px;
+    font-size: 20px;
+    /*background-color: #1e7dd7;*/
+    padding: 0 25px 0 12px;
+}
+
+
+.i_quickticket div span.first{
+    float: left;
+    height: 34px;
+    line-height: 34px;
+
+
+}
+
+.i_quickticket div span.second{
+    float: right;
+    height: 34px;
+    line-height: 34px;
+}
+
+.i_quickticket div span i{
+    color: #F90;
+    font-weight: 400;
+}
+
+
+.i_quickticket div em{
+    background: url(../img/index24.png) -58px 0 no-repeat;
+    width: 14px;
+    height: 8px;
+    position: absolute;
+    top: 13px;
+    right: 10px;
+
+}
+
+.i_quickticket .quickBuy{
+
+    padding-top: 13px;
+    text-align: center;
+    border-radius: 50px;
+}
+.i_quickticket .quickBuy a{
+    border-radius: 50px;
+    display: inline-block;
+    width: 148px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 15px;
+    background: #ccc;
+    color: #666;
+    cursor: default;
+}
+
+.ciname-movie{
+    position: relative;
+    width: 980px;
+    height: 256px;
+    float: right;
+    z-index: 1;
+    background-color: lightgoldenrodyellow;
+    overflow: hidden;
+}
+.ciname-movie ul{
+    width: 1955px;
+    position: relative;
+}
+
+.ciname-movie ul:after{
+    clear: both;
+    display: block;
+    content: '';
+}
+
+.ciname-movie ul li{
+    width: 125px;
+    float: left;
+    margin-left: 20px;
+}
+
+.ciname-movie ul li.first{
+    width: 360px;
+}
+
+.mainmovie {
+    position: relative;
+}
+.mainmovie .cinameimgitem {
+    position: relative;
+    width: 170px;
+    float: left;
+}
+
+.cinameimgitem .icohot {
+    background: url(../img/index24.png) -113px -103px no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.cinameimgitem .moviegrade {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    background: #74ab34;
+    width: 32px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.mainmovie .mainmovieinfo {
+    width: 178px;
+    height: 256px;
+    margin-left: 12px;
+    float: left;
+    position: relative;
+}
+
+.mainmovie .mainmovieinfo h3 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+    padding-bottom: 20px;
+}
+
+.mainmovie .mainmovieinfo h3 a{
+    font-size: 18px;
+}
+
+.mainmovie .mainmovieinfo p {
+    color: #777;
+    padding-bottom: 5px;
+}
+
+.mainmovie .mainmovieinfo p.combox {
+    height: 70px;
+    color: #6ba22a;
+    font-size: 15px;
+    line-height: 1.7;
+    padding-top: 5px;
+}
+
+.mainmovie .mainmovieinfo p.combox i {
+    display: inline-block;
+    background: url(../img/index24.png) -116px 0 no-repeat;
+    width: 22px;
+    height: 16px;
+    margin-right: 10px;
+    vertical-align: baseline;
+}
+
+.mainmovie .mainmovieinfo .ticketbox {
+    padding-top: 46px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+}
+
+.mainmovie .mainmovieinfo .ticketbox b {
+    display: inline-block;
+    height: 47px;
+    padding-left: 25px;
+    color: #fc6921;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.mainmovie .mainmovieinfo .ticketbox strong {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.btnblue{
+    display: inline-block;
+    background: #1e7dd7;
+    width: 130px;
+    line-height: 32px;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.cinameimgout {
+    position: relative;
+}
+
+.cinameimgout:hover .cinameimgitem2{
+    display: block;
+}
+
+.cinameimgitem {
+    display: block;
+    position: relative;
+}
+
+.cinameimgitem2, .cinameimgitem2 a {
+    width: 125px;
+    height: 190px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.cinameimgitem2 {
+    background: url(../img/hover_black.png);
+    font-size: 13px;
+    display: none;
+}
+
+.cinameimgitem2 .smalltypebox {
+    padding: 12px;
+    color: #979797;
+}
+
+.cinameimgitem2 .smallcom {
+    position: relative;
+    padding: 0 10px 0 25px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.cinameimgitem2 .smallcom i {
+    background: url(../img/index24.png) -114px -21px no-repeat;
+    width: 12px;
+    height: 9px;
+    position: absolute;
+    left: 6px;
+    top: 2px;
+}
+
+.cinameimgitem2 .smallprice {
+    color: #fc6921;
+    text-align: center;
+    padding-top: 16px;
+}
+
+.cinameimgitem2 .smallprice strong {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.ciname-movie li .btnticket {
+    padding-top: 5px;
+}
+
+.ciname-movie li .btnticket .btnblue {
+    width: 120px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+/*列表切换键*/
+.tab-box .prev, .tab-box .next {
+    background: url(../img/hover_black.png );
+    width: 32px;
+    height: 68px;
+    position: absolute;
+    top: 50%;
+    margin-top: -34px;
+    z-index: 5;
+    opacity: .5;
+    filter: alpha(opacity=80);
+}
+
+.tab-box .prev:hover, .tab-box .next:hover{
+    opacity: .8;
+}
+
+.tab-box .next {
+    right: -35px;
+}
+
+.tab-box .prev i, .tab-box .next i {
+    background: url(../img/index24.png) -155px 0 no-repeat;
+    width: 17px;
+    height: 36px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -18px 0 0 -9px;
+}
+
+.tab-box .prev {
+    /*display: none;*/
+    left: 200px;
+
+}
+
+.tab-box .next {
+    left: auto;
+}
+
+.tab-box .next i {
+    background-position: -138px 0;
+}
+
+.ciname-onnext{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.ciname-onnext ul{
+    width: 8000px;
+    position: relative;
+    left: 0;
+}
+.ciname-onnext ul:after{
+    clear: both;
+    display: block;
+    content: '';
+}
+.ciname-onnext li {
+    float: left;
+    width: 305px;
+    margin-right: 15px;
+}
+
+.ciname-onnext .showday {
+    font-size: 27px;
+    color: #afafaf;
+    line-height: 1;
+    font-weight: 100;
+    padding-bottom: 15px;
+}
+
+.ciname-onnext .showbox {
+    min-height: 190px;
+    position: relative;
+    padding-left: 139px;
+}
+
+.ciname-onnext .showbox .imgbox {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.ciname-onnext .showbox h3 {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 5px;
+    line-height: 1.2;
+}
+
+.ciname-onnext .showbox h3 a{
+    display: block;
+}
+
+.ciname-onnext .showbox h3:hover a{
+    color: #1f7dd7;
+}
+
+.ciname-onnext .showtype {
+    color: #777;
+    margin-top: 9px;
+}
+
+.ciname-onnext .showtype p {
+    padding-bottom: 2px;
+}
+
+.ciname-onnext .showtype b {
+    color: #fc6921;
+}
+
+.ciname-onnext .showtype a {
+    color: #777;
+}
+
+.ciname-onnext .showtype .icovideo {
+    display: inline-block;
+    background: url(../img/index24.png) -17px -245px no-repeat;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+.ciname-onnext .showticket {
+    height: 28px;
+    padding-top: 57px;
+    position: relative;
+}
+
+.ciname-onnext .showticket b {
+    color: #fc6921;
+    position: absolute;
+    top: 16px;
+    left: 30px;
+}
+
+.ciname-onnext .showticket b strong {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.ciname-onnext .showticket .btngreen {
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    vertical-align: middle;
+
+    width: 120px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    background: #74ab34;
+
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.tab-box2 .prev{
+    left: -35px;
+}
+
+.tab-box2 .next{
+    right: -35px;
+}
+
+.tab-box .shadowleft,.tab-box .shadowright{
+    background: url(../img/index24.png)-193px -245px no-repeat;
+    width: 7px;
+    height: 317px;
+    position: absolute;
+    top: -35px;
+    z-index: 4;
+    right: 0;
+    left: auto;
+}
+.tab-box .shadowleft{
+    left: -7px;;
+    right: auto;
+}
+
+.tab-box .shadowright{
+    right: 0;
+    left: auto;
+}
+
+.tab-box .viewmore {
+    position: relative;
+    padding-top: 35px;
+    bottom: -20px;
+}
+
+/*商城*/
+.mallregion {
+    padding: 39px 0;
+}
+
+.customtitle {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.customnav {
+    width: 1200px;
+    margin: 0 auto 19px;
+    position: relative;
+    text-align: center;
+}
+
+.customnav i {
+    background: #e5e5e5;
+    width: 100%;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: 2px;
+}
+
+.customnav dd, .customnav dl {
+    background: #fff;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.customnav dd {
+    padding: 0 25px;
+    font-size: 16px;
+    line-height: 1.1;
+    border-left: 1px solid #e5e5e5;
+    margin-left: -1px;
+}
+
+
+.mallrecommend {
+    margin: 0 auto;
+    width: 1200px;
+    padding-bottom: 10px;
+}
+
+.mallrecommend dd, .mallrecommend dt {
+    float: left;
+    position: relative;
+}
+
+.mallrecommend dt {
+    width: 180px;
+}
+
+.categorynav {
+    padding: 20px 25px 0;
+    height: 378px;
+    border: 1px solid #e6e6e6;
+}
+.categorynav h3 {
+    font-size: 15px;
+    line-height: 26px;
+}
+.categorynav h3 a{
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    vertical-align: middle;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.categorynav h3 a:hover {
+    color: #1f7dd7;
+}
+
+.categorynav i {
+    width: 26px;
+    height: 26px;
+    margin-right: 6px;
+}
+
+.categorynav i img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.categorynav p {
+    padding: 5px 0 20px;
+}
+
+.categorynav p a {
+    width: 60px;
+    color: #888;
+    line-height: 1.3rem;
+    font-size: 13px;
+}
+.mainrecommend{
+    margin: 0 auto;
+    width: 1200px;
+    padding-bottom: 30px;
+}
+
+.mainrecommend:after{
+    display: block;
+    clear: both;
+    content: '';
+}
+.mallrecommend dd {
+    margin: 0 0 20px 20px;
+}
+.mallrecommend dl:after {
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+
+.itemblock .tag, .itemblock2 .tag i {
+    background: #eb321e;
+    color: #fff;
+    font-size: 13px;
+    padding: 0 8px;
+}
+
+.itemblock .tag {
+    line-height: 22px;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+}
+
+.mainrecommend .mainitem {
+    float: left;
+    width: 477px;
+}
+
+.mainrecommend dl {
+    width: 722px;
+    float: left;
+    border-top: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+}
+
+.mainrecommend dd, .mainrecommend dt {
+    float: left;
+}
+
+.itemblock2 {
+    position: relative;
+    display: block;
+}
+
+.itemblock2 .titarea {
+    position: absolute;
+    left: 22px;
+    top: 22px;
+    right: 22px;
+}
+
+.itemblock2 h3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #333;
+    padding: 0 0 3px;
+}
+
+.itemblock2 p {
+    color: #888;
+}
+
+.itemblock2 .price {
+    margin-top: 8px;
+    color: #333;
+}
+
+.itemblock2 .price strong {
+    font-size: 18px;
+}
+
+.itemblock2 .titarea {
+    position: absolute;
+    left: 22px;
+    top: 22px;
+    right: 22px;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+.mainrecommend dd, .mainrecommend dt, .partnerarea {
+    border-bottom: 1px solid #e6e6e6;
+}
+.mainrecommend dd {
+    border-left: 1px solid #e6e6e6;
+}
+
+.partnerarea {
+    margin: 0 auto 22px;
+    width: 1200px;
+}
+
+.partnerarea:after{
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.partnerarea dd {
+    float: left;
+    width: 240px;
+    position: relative;
+    z-index: 1;
+}
+
+.partnerarea dd:hover {
+    box-shadow: 0 0 5px #666;
+    z-index: 3;
+}
+
+.mselectionregion {
+    padding-top: 47px;
+}
+
+.selectionregion {
+    background: #282828;
+}
+
+.headslider, .indexstruct, .mselection {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mselection {
+    padding: 35px 0 20px;
+}
+
+.seltrailer {
+    width: 860px;
+    float: left;
+    color: #fff;
+}
+
+.seltrailer a {
+    color: #fff;
+}
+
+.titmore {
+    float: right;
+    position: relative;
+    padding-top: 4px;
+}
+
+.seltrailer h4 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.seltrailer dl {
+    margin-top: 25px;
+}
+
+.seltrailer dt {
+    width: 618px;
+    float: left;
+}
+
+.seltrailer dt h3 a{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.seltrailer dt h3, .seltrailer dt p {
+    padding-left: 20px;
+    margin-top: 12px;
+}
+
+.seltrailer dt h3 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.seltrailer .mainvideo {
+    position: relative;
+    display: block;
+}
+
+.fix:after {
+    content: "";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+.seltrailer .mainvideo i {
+    background: url(../img/index24.png) -80px -47px no-repeat;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+}
+
+.seltrailer dt h3 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.seltrailer dt p {
+    font-size: 16px;
+    color: #d2d2d2;
+    margin-top: 7px;
+}
+
+.seltrailer dd {
+    width: 230px;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.seltrailer .videobox {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.seltrailer .videobox span {
+    background: url(../img/index24.png) 0 -153px repeat-x;
+    width: 100%;
+    height: 43px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-top: 45px;
+    padding-left: 50px;
+}
+
+.seltrailer .videobox span i {
+    background: url(../img/index24.png) 0 -103px repeat-x;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 7px;
+    bottom: 11px;
+}
+
+.seltrailer .videobox span strong {
+    max-width: 170px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.seltrailer .videobox span b {
+    font-size: 12px;
+    color: #c8c8c8;
+}
+
+.selguide {
+    width: 320px;
+    float: right;
+}
+
+.selguide h4 {
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    margin: -8px 0 25px;
+}
+
+.selguide .mainguide {
+    background: #fff;
+}
+
+.selguide .mainguide dd, .selguide .mainguide dt {
+    clear: both;
+    overflow: hidden;
+    position: relative;
+    padding: 0 18px;
+}
+
+.selguide .mainguide span {
+    float: left;
+    line-height: 45px;
+}
+
+.selguide .mainguide dt span {
+    width: 122px;
+    font-weight: 700;
+}
+
+.selguide .mainguide dd.odd {
+    background: #f5f5f5;
+}
+
+.selguide .mainguide dd, .selguide .mainguide dt {
+    clear: both;
+    overflow: hidden;
+    position: relative;
+    padding: 0 18px;
+}
+
+.selguide .mainguide span.moviename {
+    width: 110px;
+}
+
+.movieselect .name .namebox, .newsitem .describe a, .newsitem h3 a, .selguide .mainguide span.moviename a, .seltrailer .videobox span strong, .seltrailer dt h3 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.selguide .mainguide span.movierank {
+    width: 92px;
+    text-align: center;
+    color: #61ac36;
+}
+
+.selguide .mainguide span.movierank i {
+    background: url(../img/index24.png) no-repeat;
+    width: 7px;
+    height: 13px;
+    margin-left: 10px;
+}
+
+
+.selguide .mainguide span.movierank i.fair {
+    background-position: -72px -13px;
+}
+
+.selguide .mainguide span.moviectrl {
+    width: 80px;
+    text-align: right;
+}
+
+.selguide .mainguide span.moviectrl .btnctrl {
+    width: 70px;
+    line-height: 22px;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #888;
+    color: #888;
+    border-radius: 15px;
+}
+
+.selguide .mainguide span.moviectrl .btnctrl,.mainguide span.movierank i{
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+.selguide .mainguide span.moviectrl .btnctrl.on {
+    background: #61ac36;
+    border-color: #61ac36;
+    color: #fff;
+}
+
+.fr {
+    float: right;
+}
+
+.selguide .mainguide dt .fr {
+    line-height: 40px;
+    font-size: 13px;
+}
+
+.gt {
+    display: inline-block;
+    background: url(../img/index24.png) -126px -21px no-repeat;
+    width: 6px;
+    height: 10px;
+    line-height: 0;
+    font-size: 0;
+    top: -1px;
+}
+
+.seltrailer .mainvideo:hover i, .seltrailer .videobox:hover i {
+    opacity: .7;
+    filter: alpha(opacity=70);
+}
+
+.movielist {
+    padding: 63px 0 30px;
+}
+.headslider, .indexstruct, .mselection {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mlist {
+    width: 860px;
+}
+
+.block, .fix {
+    display: block;
+}
+
+.titmore {
+    float: right;
+    position: relative;
+    padding-top: 4px;
+}
+.mlist h4 {
+    font-size: 22px;
+    font-weight: 400;
+}
+.mlist ul {
+    margin-top: 25px;
+    width: 878px;
+}
+.mlist li {
+    width: 439px;
+    height: 255px;
+    overflow: hidden;
+}
+.mlistpic, .mlistpic dd, .selguide .mainguide {
+    position: relative;
+}
+
+.mlist, .mlist li, .mlistpic dd, .mlistpic dt {
+    float: left;
+}
+
+.mlistpic dt {
+    width: 280px;
+}
+.mlistpic dd {
+    width: 138px;
+    margin: 0 0 2px 2px;
+}
+.mlistpic dd span, .mlistpic dd strong {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.mlistpic dd span {
+    background: url(http://static1.mtime.cn/static/images/bg/000000_70.png);
+    width: 138px;
+    height: 99px;
+    z-index: 2;
+}
+
+.mlistpic dd strong {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    line-height: 99px;
+    font-weight: 400;
+    z-index: 3;
+}
+
+.mlistpic dd strong i {
+    font-size: 30px;
+    color: #e6e6e6;
+}
+.mlist h3{
+    font-size: 16px;
+    line-height: 1.6;
+    padding-top: 6px;
+}
+
+.mlist h3 a{
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.mboxoffice {
+    width: 303px;
+    float: right;
+}
+
+.mboxoffice h4 {
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 23px;
+}
+.mboxofficetab {
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 16px;
+    height: 34px;
+}
+
+.mboxofficetab dd.cur {
+    color: #1e7dd7;
+    font-weight: 700;
+}
+.mboxofficetab dd {
+    float: left;
+    width: 33%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mboxofficetab dd span {
+    padding-bottom: 12px;
+    margin-bottom: -2px;
+    font-size: 16px;
+}
+
+.mboxofficetab dd.cur span {
+    border-bottom: 3px solid #1e7dd7;
+    padding-bottom: 12px;
+
+}
+
+.mboxoffice li {
+    margin-top: 20px;
+    padding-bottom: 2px;
+}
+
+.mboxofficerank dd, .mboxofficerank dt {
+    float: left;
+}
+
+.mboxofficerank dt {
+    font-size: 28px;
+    color: #d2d2d2;
+    font-weight: 400;
+}
+.mboxofficerank dd.moviepic {
+    width: 80px;
+    height: 120px;
+    position: relative;
+}
+.mboxofficerank dd {
+    margin-left: 9px;
+}
+
+.mboxoffice p.tr, .mboxofficerank .moviegrade {
+    margin-top: 5px;
+}
+
+.mboxofficerank dd.moviepic .moviegrade {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.mboxofficerank dd.text {
+    width: 170px;
+}
+
+.mboxofficerank h3 {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 3px 0 8px;
+}
+
+.mboxofficerank h3 a{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.mboxofficerank p {
+    color: #888;
+}
+
+.mboxofficerank dd.moviepic .moviegrade {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.mboxoffice p.tr, .mboxofficerank .moviegrade {
+    margin-top: 5px;
+}
+
+
+.moviegrade {
+    background: #74ab34;
+    width: 32px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.tr {
+    text-align: right;
+}
+
+.headslider, .indexstruct, .mselection {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.headslider {
+    position: relative;
+    height: 360px;
+    z-index: 2;
+}
+.hotcomments {
+    float: left;
+    width: 860px;
+}
+
+.indexstruct .structleft {
+    width: 860px;
+    float: left;
+}
+
+.titmore {
+    float: right;
+    position: relative;
+    padding-top: 4px;
+}
+
+h4.indextitle {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.hotcomments .maincom {
+    width: 450px;
+    height: auto;
+    float: left;
+}
+.headslider .lastpic, .headslider .nextpic {
+    background: url(../img/carouselBtnBg.png);
+    width: 48px;
+    height: 102px;
+    position: absolute;
+    top: 50%;
+    margin-top: -51px;
+    z-index: 5;
+    opacity: .8;
+    filter: alpha(opacity=80);
+}
+
+.headslider .lastpic {
+    left: 0;
+}
+
+.hotcomments .commbox {
+    margin-top: 25px;
+}
+
+.hotcomments .maincom .lastpic, .hotcomments .maincom .nextpic {
+    width: 32px;
+    height: 68px;
+    top: 99px;
+    margin-top: 0;
+}
+
+.headslider .nextpic {
+    right: 0;
+}
+
+
+.hotcomments .maincom .lastpic i, .hotcomments .maincom .nextpic i {
+    width: 14px;
+    margin-left: -7px;
+}
+.headslider .lastpic i, .headslider .nextpic i {
+    background: url(../img/index24.png) no-repeat;
+    width: 21px;
+    height: 47px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -24px 0 0 -11px;
+    opacity: .6;
+}
+
+.hotcomments .maincom .nextpic i {
+    background-position: -28px 0;
+}
+
+.hotcomments .maincom dd, .hotcomments .maincom dl {
+    height: 480px;
+}
+.headslider dl {
+    position: relative;
+    height: 360px;
+    z-index: 3;
+}
+
+.headslider dd {
+    background: center no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 360px;
+    z-index: 1;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.hotcomments .commentsbox {
+    height: 253px;
+    border: 1px solid #e6e6e6;
+    border-top: none;
+    padding: 0 25px;
+}
+.hotcomments .commentsbox .commentsuser {
+    position: relative;
+    padding: 50px 10px 0 85px;
+    margin: -35px 0 0 -10px;
+    color: #888;
+}
+.hotcomments .commentsbox .commentsuser a {
+    color: #888;
+}
+
+.hotcomments .commentsbox .commentsuser img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+.hotcomments .commentsbox .commentsuser p a {
+    max-width: 85px;
+    margin: 0 12px;
+}
+
+
+
+.hotcomments .commentsbox h3 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 22px;
+    padding: 30px 0 20px;
+}
+
+.hotcomments .commentsbox .describe {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.hotcomments .commentsbox .describe i {
+    background: url(../img/index24.png) -86px 0 no-repeat;
+    width: 30px;
+    height: 21px;
+    margin-right: 10px;
+    top: -5px;
+    vertical-align: baseline;
+}
+
+.hotcomments .commentsbox .commentsuser {
+    position: relative;
+    padding: 50px 10px 0 85px;
+    margin: -35px 0 0 -10px;
+    color: #888;
+}
+
+.hotcomments .commentsbox .commentsuser p a
+{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.btnblue, .btnfalse, .btngreen, .btngrey, .gt, .headbarnav dd a, .headcart-tip .itar, .headlogin a, .headlogin em, .headmessage .ico-message, .headqr, .headqr .ico-app, .headunlogin a, .headunlogin em, .headzoom em, .logintool .code, .logintool .name, .logintool .password, .logintool .usertip .ico-check, .logintool .usertip .ico-checkend, .moviegrade, .my-name dt a span, .otherlogin a, .pagesize a, .peoplelike, .peoplenormal, .peoplesad, .selctsearch i, .selctsearch span, .selctsearch strong, .showsearch .searhtiper .moviefilm .ico_map, .viewmore a i {
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+
+.actcont .actadd i, .actcont .actbtn a, .actcont .acttime i, .actdot i, .categorynav h3 a, .categorynav i, .categorynav p a, .ciname-movie .mainmovie .mainmovieinfo p.combox i, .ciname-onnext .showtype .icovideo, .cinemamenu dd, .cinematip .alist a, .countdown em, .countdown i, .customnav dd, .customnav dl, .hotcomments .commentsbox .commentsuser p a, .hotcomments .commentsbox .commentsuser span, .hotcomments .commentsbox .describe i, .hotcomments .commentsmod .describe i, .hotcomments .commentsmod .describemovie a, .i_cityselect .icon_jtup, .i_cityselect .icon_position, .itemblock2 .tag i, .mboxofficetab dd span, .movieselect, .movieselect .name, .movieselect .name .namebox, .selcity_tiptit .cityletter a, .selguide .mainguide span.moviectrl .btnctrl, .selguide .mainguide span.movierank i {
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+.hotcomments .commentsbox h3 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 22px;
+    padding: 30px 0 20px;
+}
+
+.hotcomments .commentsbox h3 a{
+    font-weight: 400;
+    text-align: center;
+    font-size: 22px;
+}
+
+.hotcomments .sidercom {
+    width: 375px;
+    float: right;
+}
+.hotcomments .commentsmod {
+    min-height: 120px;
+    position: relative;
+    padding-right: 100px;
+    margin: 5px 0 46px;
+}
+.hotcomments .commentsmod img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.hotcomments .commentsmod .describe {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.hotcomments .commentsmod .describe i {
+    background: url(../img/index24.png) -116px 0 no-repeat;
+    width: 22px;
+    height: 16px;
+    margin-right: 10px;
+    vertical-align: baseline;
+}
+
+.hotcomments .commentsmod .describemovie {
+    color: #888;
+    margin-top: 10px;
+}
+.hotcomments .commentsmod .describemovie a {
+    max-width: 85px;
+    color: #888;
+}
+
+.indexstruct .structright {
+    width: 303px;
+    float: right;
+}
+
+h4.indextitle {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1;
+}
+.tc {
+    text-align: center;
+}
+
+.actlist {
+    margin-top: 25px;
+}
+.actlist, .actlist dl {
+    position: relative;
+}
+
+.actdot {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 215px;
+}
+
+.actlist dd {
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.actlist .actpic {
+    position: relative;
+}
+
+.actlist .actpic i {
+    background: #eb321e;
+    color: #fff;
+    font-size: 13px;
+    line-height: 24px;
+    padding: 0 8px;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+}
+.actcont {
+    width: 261px;
+    height: 269px;
+    border: 1px solid #e6e6e6;
+    border-top: none;
+    padding: 0 20px;
+    font-size: 13px;
+}
+.actcont h3 {
+    padding: 33px 5px 15px;
+    font-size: 16px;
+}
+
+.actcont h3 a{
+    font-size: 16px;
+}
+
+.actcont p {
+    line-height: 1.6;
+    margin-bottom: 4px;
+}
+
+.actcont .actadd i, .actcont .acttime i {
+    background: url(../img/index24.png) -86px -21px no-repeat;
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+}
+
+.actcont .actadd i {
+    background-position: -100px -21px;
+    height: 16px;
+}
+
+.actcont .actinfo {
+    color: #888;
+    padding: 8px 0 0;
+    margin-bottom: 12px;
+}
+
+.actcont .actbtn {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.actcont .actbtn a {
+    background: #1c7ed5;
+    width: 160px;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.funnews {
+    padding: 30px 0;
+}
+
+.funnews h4 {
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 22px;
+}
+
+h4.indextitle {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.newslist {
+    overflow: hidden;
+}
+
+.newslist dl {
+    width: 1220px;
+}
+
+.funnews .newslist dd {
+    padding-bottom: 33px;
+}
+.newslist dd {
+    width: 285px;
+    margin-right: 20px;
+    float: left;
+    padding-bottom: 23px;
+}
+
+.newsitem .imgbox {
+    position: relative;
+    display: block;
+}
+
+.newsitem h3 {
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.newsitem h3 a{
+    display: block;
+    font-size: 16px;
+}
+
+.newsitem .describe {
+    padding-top: 3px;
+}
+
+.newsitem .describe a {
+    color: #888;
+    display: block;
+}
+
+/*回到顶部菜单*/
+.mtimebar{
+    position: fixed;
+    width: 50px;
+    height: 102px;
+    right: 0;
+    bottom: 5px;
+    z-index: 100;
+
+}
+
+.mtimebar .searchbar{
+    width: 50px;
+    height: 50px;
+}
+
+.mtimebar .searchbar, .mtimebar .sharebar, .mtimebar .topbar {
+    background: url(../img/plugins.png) no-repeat;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    height: 50px;
+    line-height: 50px;
+    margin: 1px 0 0;
+    opacity: .9;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 50px;
+}
+
+.mtimebar .searchbar {
+    background-position: -54px 0;
+}
+.mtimebar .searchbar:hover {
+    background-position: 0 0;
+}
+
+.mtimebar .topbar {
+    background-position: -54px -255px;
+}
+
+.mtimebar .topbar:hover {
+    background-position: 0 -255px;
+}
+
+.mtimebar .searchbar .baron, .mtimebar .topbar .baron {
+    background: #fff;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    height: 48px;
+    width: 48px;
+}
+
+.mtimebar .baron {
+    display: none;
+    font-size: 13px;
+    opacity: 1;
+}
+
+.mtimebar .searchbar:hover, .mtimebar .sharebar:hover, .mtimebar .topbar:hover {
+    opacity: 1;
 }
