@@ -8,23 +8,44 @@
     <link rel="stylesheet" href="css/foot.css">
     <script src="js/utils.js"></script>
     <script src="js/animate.js"></script>
+    <script src="js/packUtils.js"></script>
+    <script src="js/header.js"></script>
     <script src="js/index.js"></script>
+
 </head>
 <body>
 <div id="headerBar">
-    <div class="headerOut">
+    <div class="headerOut" style="position: fixed;">
         <div class="headerContent">
             <h1 class="mtimelogo">
-                <a href="http://www.mtime.com/" title="Mtime时光网" data-pan="M16_HeadNav_MiddleNav">Mtime时光网</a>
+                <a href="javascript:;" title="Mtime时光网" data-pan="M16_HeadNav_MiddleNav">Mtime时光网</a>
             </h1>
             <dl>
-                <dd><a href="">首页<i class="show"></i></a></dd>
-                <dd><a href="">购票<i></i></a></dd>
-                <dd><a href="">正版商城<i></i><em>hot</em></a></dd>
-                <dd><a href="">新闻<i></i></a></dd>
-                <dd><a href="">发现<i></i></a></dd>
-                <dd><a href="">社区<i></i></a></dd>
+                <dd><a href="index.html">首页<i class="show"></i></a></dd>
+                <dd><a href="javascript:;">购票<i></i></a></dd>
+                <dd><a href="javascript:;">正版商城<i></i><em>hot</em></a></dd>
+                <dd><a href="javascript:;">新闻<i></i></a></dd>
+                <dd><a href="javascript:;">发现<i></i></a></dd>
+                <dd><a href="javascript:;">社区<i></i></a></dd>
             </dl>
+
+            <div id="searchbox" class="searchbox">
+                <div class="selectSearch">
+                    <strong>全部</strong>
+                    <i></i>
+                    <span>|</span>
+                    <ul>
+                        <li>全部</li>
+                        <li>电影</li>
+                        <li>影人</li>
+                        <li>影院</li>
+                        <li>商品</li>
+                        <li>新闻</li>
+                    </ul>
+                </div>
+                <input type="text" placeholder="搜索电影、影院、影人、商品...">
+                <a href="javascript:;" class="searchboxBtn select"><i></i></a>
+            </div>
 
             <div class="headRight">
                 <div class="shopping">
@@ -40,7 +61,7 @@
                     <i class="line"></i>
                     <a href="">登录</a>
                     <b></b>
-                    <a href="./singin.html" target="_blank">注册</a>
+                    <a  href="./singin.html" target="_self">注册</a>
                 </div>
 
                 <div class="app">
@@ -58,7 +79,9 @@
                     </div>
                 </div>
 
-                <div class="headtool" id="searchtooldiv" style="">
+
+
+                <div class="headtool" id="headtool" style="">
                     <a href="javascript:;" class="headzoom" id="searchtoolbox" data-pan="M16_HeadNav_Sreach_Tool_Zoom">
                         <em class="zoom" title="搜索" id="searchtoolbtn"></em>
                     </a>
@@ -69,8 +92,8 @@
         </div>
     </div>
 </div>
-<div class="mtimebar">
-    <div title="搜索" class="searchbar" style=""><b class="baron">搜索</b></div>
+<div class="mtimebar" id="mtimebar">
+    <div title="搜索" id="searchbar" class="searchbar" style=""><b class="baron">搜索</b></div>
     <div title="返回顶部" class="topbar" style=""><b class="baron">返回顶部</b></div>
 </div>
 <div id="homeContent" class="homeContent">
@@ -1761,12 +1784,12 @@
             </div>
             <div class="fix commbox">
                 <div class="headslider maincom" id="commentsTop" data-ride="carousel">
-                    <a href="#commentsTop" title="上一张" data-slide="prev" class="lastpic" style="display:block;"><i></i></a>
-                    <a href="#commentsTop" title="下一张" data-slide="next" class="nextpic" style="display:block;"><i></i></a>
+                    <a href="javascript:;" title="上一张" data-slide="prev" class="lastpic" style="display:block;"><i></i></a>
+                    <a href="javascript:;" title="下一张" data-slide="next" class="nextpic" style="display:block;"><i></i></a>
                     <dl>
                         <dd style="opacity: 0; z-index: 1;" data-opacity="0" data-pan="M16_Index_Commu_Com_First">
                             <a href="javascript:;" target="_blank" class="hotcomimg" title="热烈欢迎这部开挂的印度史诗！">
-                                <img src="img/hotcomments/191543.28435256_64X64.jpg" width="450" height="260"
+                                <img src="img/hotcomments/143931.50061615.jpg" width="450" height="260"
                                      alt="热烈欢迎这部开挂的印度史诗！">
                             </a>
                             <div class="commentsbox">

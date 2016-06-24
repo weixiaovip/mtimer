@@ -30,6 +30,9 @@ img {
     /*font-weight: bold;*/
 /*}*/
 
+.headRight .app .headqr b{
+    right: 3px;
+}
 
 a{
     text-decoration: none;
@@ -786,6 +789,16 @@ body{
     display: block;
 }
 
+.movieListSelling h3{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.movieListSelling .first h3{
+    margin-top: 0;
+    text-align: left;
+}
+
 .cinameimgitem {
     display: block;
     position: relative;
@@ -839,6 +852,15 @@ body{
 
 .ciname-movie li .btnticket {
     padding-top: 5px;
+}
+
+.btnblue:hover, .btnfalse:hover, .btngreen:hover, .btngrey:hover {
+    background: #1870c9;
+    color: #fff;
+}
+
+.ciname-movie li .btnticket a:hover{
+    color: white;
 }
 
 .ciname-movie li .btnticket .btnblue {
@@ -1666,15 +1688,13 @@ strong, b {
 }
 
 .mboxofficetab dd span {
-    padding-bottom: 12px;
+    padding-bottom: 9px;
     margin-bottom: -2px;
     font-size: 16px;
 }
 
 .mboxofficetab dd.cur span {
     border-bottom: 3px solid #1e7dd7;
-    padding-bottom: 12px;
-
 }
 
 .mboxoffice li {
@@ -2166,6 +2186,7 @@ h4.indextitle {
 }
 
 .mtimebar .searchbar{
+    display: none;
     width: 50px;
     height: 50px;
 }

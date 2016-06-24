@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/foot.css">
     <script src="js/utils.js"></script>
     <script src="js/animate.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/packUtils.js"></script>
     <script src="js/singin.js"></script>
 </head>
 <body>
@@ -15,16 +17,34 @@
     <div class="headerOut">
         <div class="headerContent">
             <h1 class="mtimelogo">
-                <a href="http://www.mtime.com/" title="Mtime时光网" data-pan="M16_HeadNav_MiddleNav">Mtime时光网</a>
+                <a href="javascript:;" title="Mtime时光网" data-pan="M16_HeadNav_MiddleNav">Mtime时光网</a>
             </h1>
             <dl>
-                <dd><a href="">首页<i class="show"></i></a></dd>
-                <dd><a href="">购票<i></i></a></dd>
-                <dd><a href="">正版商城<i></i><em>hot</em></a></dd>
-                <dd><a href="">新闻<i></i></a></dd>
-                <dd><a href="">发现<i></i></a></dd>
-                <dd><a href="">社区<i></i></a></dd>
+                <dd><a href="index.html">首页<i class="show"></i></a></dd>
+                <dd><a href="javascript:;">购票<i></i></a></dd>
+                <dd><a href="javascript:;">正版商城<i></i><em>hot</em></a></dd>
+                <dd><a href="javascript:;">新闻<i></i></a></dd>
+                <dd><a href="javascript:;">发现<i></i></a></dd>
+                <dd><a href="javascript:;">社区<i></i></a></dd>
             </dl>
+
+            <div id="searchbox" class="searchbox">
+                <div class="selectSearch">
+                    <strong>全部</strong>
+                    <i></i>
+                    <span>|</span>
+                    <ul>
+                        <li>全部</li>
+                        <li>电影</li>
+                        <li>影人</li>
+                        <li>影院</li>
+                        <li>商品</li>
+                        <li>新闻</li>
+                    </ul>
+                </div>
+                <input type="text" placeholder="搜索电影、影院、影人、商品...">
+                <a href="javascript:;" class="searchboxBtn select"><i></i></a>
+            </div>
 
             <div class="headRight">
                 <div class="shopping">
@@ -58,7 +78,9 @@
                     </div>
                 </div>
 
-                <div class="headtool" id="searchtooldiv" style="">
+
+
+                <div class="headtool" id="headtool" style="">
                     <a href="javascript:;" class="headzoom" id="searchtoolbox" data-pan="M16_HeadNav_Sreach_Tool_Zoom">
                         <em class="zoom" title="搜索" id="searchtoolbtn"></em>
                     </a>
@@ -77,55 +99,81 @@
                 <dd class="on" data-selector="mobile">手机注册</dd>
                 <dd data-selector="email">邮箱注册</dd>
             </dl>
-            <dl>
-                <dd>
-                    <div class="reg_txt" style="display:none;"><input id="reg_email" type="text" value="" class="c_a5">
-                        <p class="reg_err"></p></div>
-                </dd>
-                <dd>
-                    <div class="reg_txt"><input id="reg_mobile" type="text" value="" class="c_a5">
-                        <p class="reg_err"></p></div>
-                </dd>
-                <dd>
-                    <div class="reg_txt"><input id="reg_password" type="password" value="" class="c_a5" maxlength="20">
-                        <label id="reg_password_label" class="reg_pw">密码 (6-20位字母与数字、符号组合)</label>
-                        <p class="reg_err"></p>
-                        <div id="levelDiv" class="password_box "><p id="levelTip">密码强度</p>
-                            <p><i class="ps1">&nbsp;</i><i class="ps2">&nbsp;</i><i class="ps3">&nbsp;</i></p></div>
-                    </div>
-                </dd>
-                <dd>
-                    <div class="reg_txt"><input id="reg_password2" type="password" value="" class="c_a5" maxlength="20">
-                        <label id="reg_passworld2_label" class="reg_pw">确认密码</label>
-                        <p class="reg_err"></p></div>
-                </dd>
-                <dd>
-                    <div class="reg_txt"><input id="reg_smscode" type="text" value="" class="c_a5">
-                        <p class="reg_err"></p> <a id="reg_smscodeBtn" href="#" class="bind_telcode"
-                                                   onclick="return false;">获取验证码</a></div>
-                </dd>
-                <dd style="display:none;">
-                    <div class="reg_txt" style="width:190px;"><input id="reg_vcode" type="text" value="点击获取验证码"
-                                                                     class="c_a5" style=" width:160px;">
-                        <p class="reg_err" style=" width:160px;"></p></div>
-                    <span id="vcodeRegion" style="display:none;" class="ml12"> <span id="img_vcode"></span>
-                        <a href="#" id="btn_changevcode" onclick="return false;" class="px12 normal">刷新</a> </span>
-                </dd>
-                <dd>
-                    <div class="reg_selsex" id="sexRegion"> 性别： <span>
+            <div id="registerContent">
+                <dl  style="display: block">
+
+                    <dd>
+                        <div class="reg_txt"><input id="reg_mobile1" type="text" value="" class="c_a5" placeholder="常用手机号">
+                            <p class="reg_err"></p></div>
+                    </dd>
+                    <dd>
+                        <div class="reg_txt"><input id="reg_password11" type="password" value="" class="c_a5" maxlength="20" placeholder="密码 (6-20位字母与数字、符号组合)">
+                            <!--<label id="reg_password_label11" class="reg_pw">密码 (6-20位字母与数字、符号组合)</label>-->
+                            <p class="reg_err"></p>
+                            <div id="levelDiv1" class="password_box "><p id="levelTip1">密码强度</p>
+                                <p><i class="ps1">&nbsp;</i><i class="ps2">&nbsp;</i><i class="ps3">&nbsp;</i></p></div>
+                        </div>
+                    </dd>
+                    <dd>
+                        <div class="reg_txt"><input id="reg_password12" type="password" value="" class="c_a5" maxlength="20" placeholder="确认密码">
+                            <!--<label id="reg_passworld2_label12" class="reg_pw">确认密码</label>-->
+                            <p class="reg_err"></p></div>
+                    </dd>
+                    <dd>
+                        <div class="reg_txt"><input id="reg_smscode1" type="text" value="" class="c_a5">
+                            <p class="reg_err"></p> <a id="reg_smscodeBtn1" href="#" class="bind_telcode"
+                                                       onclick="return false;">获取验证码</a></div>
+                    </dd>
+
+                    <dd>
+                        <div class="reg_selsex" id="sexRegion"> 性别： <span>
                         <i data-sex="1" data-selector="sex" class="reg_checkbox"></i>男<em
-                            class="ico_female"></em></span> <span><i data-sex="0" data-selector="sex"
-                                                                     class="reg_checkbox"></i>女<em
-                            class="ico_male"></em></span>
-                        <p id="sexErrorMsg" style="display:none">请选择性别!</p> <input type="hidden" id="hidSexValue"></div>
-                </dd>
-                <dd>
-                    <div class="bind_pro"><span id="reg_policy" class="on"></span><a
-                            href="http://feature.mtime.com/help/policy.htm" target="_blank">已同意《Mtime时光网服务条款》</a></div>
-                </dd>
-                <dt class="tc pt35">
-                    <a id="btn_submit" onclick="return false;" href="#" class="regin_btn" style="display:none;">注 册</a> <a id="mobileRegisterBtn" onclick="return false;" href="#" class="regin_btn">注 册</a></dt>
-            </dl>
+                                class="ico_female"></em></span> <span><i data-sex="0" data-selector="sex"
+                                                                         class="reg_checkbox"></i>女<em
+                                class="ico_male"></em></span>
+                            <p id="sexErrorMsg1" style="display:none">请选择性别!</p> <input type="hidden" id="hidSexValue1"></div>
+                    </dd>
+                    <dd>
+                        <div class="bind_pro"><span id="reg_policy1" class="on"></span><a
+                                href="http://feature.mtime.com/help/policy.htm" target="_blank">已同意《Mtime时光网服务条款》</a></div>
+                    </dd>
+                    <dt class="tc pt35">
+                        <a id="btn_submit1" onclick="return false;" href="#" class="regin_btn" style="display:none;">注 册</a> <a id="mobileRegisterBtn1" onclick="return false;" href="#" class="regin_btn">注 册</a></dt>
+                </dl>
+                <dl  style="display: none">
+                    <dd>
+                        <div class="reg_txt"><input id="reg_email2" type="text" value="" class="c_a5" placeholder="常用邮箱">
+                            <p class="reg_err"></p></div>
+                    </dd>
+                    <dd>
+                        <div class="reg_txt">
+                            <input id="reg_password21" type="password" value="" class="c_a5" maxlength="20" placeholder="密码 (6-20位字母与数字、符号组合)">
+                            <!--<label id="reg_password_label21" class="reg_pw">密码 (6-20位字母与数字、符号组合)</label>-->
+                            <p class="reg_err"></p>
+                            <div id="levelDiv2" class="password_box "><p id="levelTip2">密码强度</p>
+                                <p><i class="ps1">&nbsp;</i><i class="ps2">&nbsp;</i><i class="ps3">&nbsp;</i></p></div>
+                        </div>
+                    </dd>
+                    <dd>
+                        <div class="reg_txt"><input id="reg_password22" type="password" value="" class="c_a5" maxlength="20" placeholder="确认密码">
+                            <!--<label id="reg_passworld2_label22" class="reg_pw">确认密码</label>-->
+                            <p class="reg_err"></p></div>
+                    </dd>
+                    <dd>
+                        <div class="reg_txt" style="width:190px;"><input id="reg_vcode2" type="text" placeholder="点击获取验证码" class="c_a5" style=" width:160px;">
+                            <p class="reg_err" style=" width:160px;"></p></div>
+                    <span id="vcodeRegion2" style="display:none;" class="ml12"> <span id="img_vcode2"></span>
+                        <a href="#" id="btn_changevcode2" onclick="return false;" class="px12 normal">刷新</a> </span>
+                    </dd>
+                    <dd>
+                        <div class="bind_pro"><span id="reg_policy2" class="on"></span><a
+                                href="http://feature.mtime.com/help/policy.htm" target="_blank">已同意《Mtime时光网服务条款》</a></div>
+                    </dd>
+                    <dt class="tc pt35">
+                        <a id="btn_submit2" onclick="return false;" href="#" class="regin_btn" style="display:none;">注 册</a> <a id="mobileRegisterBtn2" onclick="return false;" href="#" class="regin_btn">注 册</a></dt>
+                </dl>
+            </div>
+
         </div> <!--注册 end--> <!--登陆-->
         <div class="regin_right"><h5>会员登录</h5>
             <p class="px16 pt12 pb3">已有时光账号请在此登录</p>
@@ -134,12 +182,12 @@
                   method="post">
                 <dl>
                     <dd>
-                        <div class="reg_txt"><input id="loginEmailText" name="email" type="text" class="c_000" value="">
+                        <div class="reg_txt"><input id="loginEmailText" name="email" type="text" class="c_000" value="" placeholder="请输入登录邮箱 / 手机号">
                             <p class="reg_err"></p></div>
                     </dd>
                     <dd>
-                        <div class="reg_txt"><input id="loginPasswordText" type="password" value="" class="c_a5"> <label
-                                id="login_password_label" class="reg_pw">确认密码</label>
+                        <div class="reg_txt"><input id="loginPasswordText" type="password" value="" class="c_a5" placeholder="确认密码">
+                            <!--<label id="login_password_label" class="reg_pw">确认密码</label>-->
                             <p class="reg_err"></p></div>
                     </dd> <!--密码--> <input id="loginPasswordText_hide" type="hidden" name="password"> <!--验证码-->
                     <dd>

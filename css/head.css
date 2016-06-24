@@ -4,13 +4,18 @@
     height: 60px;
 }
 
+.headerOut *{
+    font: 14px/150% helvetica,"微软雅黑","microsoft yahei",Verdana,Lucida,arial,sans-serif,"黑体";
+}
+
 #headerBar a:hover{
     color: white;
 }
 
+
 .headerOut{
     z-index: 10;
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -82,19 +87,19 @@
 }
 
 .headerContent h1{
-    width: 136px;
-    height: 42px;
+    width: 117px;
+    height: 36px;
     position: absolute;
     left: 50%;
     top: 50%;
-    margin: -21px 0 0 -68px;
+    margin: -18px 0 0 -58px;
 
 }
 
 .headerContent h1 a {
-    background: url(../img/head.png) no-repeat;
-    width: 136px;
-    height: 42px;
+    background: url(../img/head.png) 0 -315px no-repeat;
+    width: 117px;
+    height: 36px;
     display: block;
     font-size: 0;
     line-height: 0;
@@ -136,6 +141,127 @@
     padding: 0;
     line-height: 60px;
 }
+/*顶部条上的搜索框*/
+.searchbox{
+    display: none;
+    position: fixed;
+    top: 10px;
+    padding: 0%;
+    width: 360.5px;
+    height: 38px;
+    left: 601.5px;
+    z-index: 1000;
+    background-color: white;
+    border-radius: 40px;
+}
+
+.searchbox .selectSearch{
+    float: left;
+    padding-left: 10px;
+    width: 100px;
+    height: 45px;
+    position: relative;
+    padding-bottom: 6px;
+    text-align: center;
+    color: #999;
+}
+
+.searchbox .selectSearch>strong{
+    display: inline-block;
+    width: 45px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+}
+
+.searchbox .selectSearch>i{
+    display: inline-block;
+
+    background: url(../img/head.png) -152px 0 no-repeat;
+    width: 11px;
+    height: 7px;
+}
+
+.searchbox .selectSearch>span{
+    width: 1px;
+    height: 14px;
+    margin-left: 10px;
+}
+
+.searchbox .selectSearch ul{
+    display: none;
+    position: absolute;
+    background: #fff;
+    width: 95px;
+    left: 0;
+    top: 41px;
+    box-shadow: 0 3px 3px rgba(0,0,0,.3);
+    border: 1px solid #ccc;
+}
+
+.searchbox .selectSearch:hover ul{
+    display: block;
+}
+
+.searchbox .selectSearch ul li{
+    text-align: center;
+    line-height: 2.4;
+    border-top: 1px solid #eee;
+    cursor: pointer;
+}
+
+.searchbox .selectSearch ul li:hover{
+    background: #e5f2fc;
+    color: #267dd7;
+}
+
+.searchbox input{
+    background: 0;
+    width: 50%;
+    line-height: 24px;
+    padding: 7px 0;
+    border: 0;
+    font-size: 13px;
+
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.searchbox .searchboxBtn{
+    position: relative;
+    float: right;
+    width: 54px;
+    height: 32px;
+    margin-right: 3px;
+    margin-top: 3px;
+    border-radius: 20px;
+}
+
+.searchbox .searchboxBtn:hover {
+
+}
+
+.searchbox .searchboxBtn i{
+    position: absolute;
+    display: inline-block;
+    background: url(../img/head.png) -115px -45px no-repeat;
+    width: 19px;
+    height: 19px;
+    left: 50%;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+}
+
+.searchbox .searchboxBtn.select{
+    background-color: #1e7dd7;
+}
+
+.searchbox .searchboxBtn.select i{
+    background-position: -134px -45px;
+}
+
+
 
 .headtool .headzoom em {
     background: url(../img/head.png) -75px -45px no-repeat;
@@ -151,6 +277,10 @@
 
 .headtool:hover .headzoom em{
     opacity: 1;
+}
+
+.headtool .headzoom em.cancel{
+    background-position: -95px -45px;
 }
 
 .headRight .app{
@@ -184,7 +314,7 @@
     height: 4px;
     position: absolute;
     right: 18px;
-    top: 50%;
+    top: 30px;
     margin-top: -2px;
     opacity: .7;
 }
