@@ -356,7 +356,8 @@ input, textarea {
     font-size: 16px;
 }
 
-.reg_txtfalse .reg_err {
+.reg_txtfalse p.reg_err {
+    display: block;
     background: #ffebec;
     width: 345px;
     position: absolute;
@@ -492,4 +493,47 @@ input, textarea {
     height: 49px;
 }
 
+/*密码强度弱*/
+.password_l i.ps1 {
+    background: #ca4004;
+}
+
+/*密码强度中*/
+.password_m i.ps1, .password_m i.ps2 {
+    background: #e7ae1f;
+}
+
+/*密码强度高*/
+.password_h i {
+    background: #5c961d;
+}
+
+.relative{
+    position: relative;
+}
+
+.ml12 {
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 170px;
+    height: 60px;
+    margin-left: 12px;
+}
+
+.mr6 {
+    margin-right: 6px;
+}
+.v_m {
+    vertical-align: middle;
+}
+
+.px12 {
+
+    font-size: 12px;
+}
+.normal {
+    font-weight: normal;
+    font-style: normal;
+}
 
