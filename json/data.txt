@@ -1,0 +1,7 @@
+[
+{"imgSrc":"img/carousel1.jpg","desc":"这是测试图片"},
+{"imgSrc":"img/carousel2.jpg","desc":"这是测试图片"},
+{"imgSrc":"img/carousel3.jpg","desc":"这是测试图片"},
+{"imgSrc":"img/carousel4.jpg","desc":"这是测试图片"},
+{"imgSrc":"img/carousel5.jpg","desc":"这是测试图片"}
+]

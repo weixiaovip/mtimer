@@ -1,0 +1,316 @@
+
+.footout {
+    background: #f7f7f7;
+    position: relative;
+    zoom: 1;
+}
+
+.foot{
+    margin-top: 15px;
+}
+
+.footout .topline {
+    background: url(../img/foot.png) center 0 no-repeat #337fab;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.footinner {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 40px;
+    font-size: 13px;
+}
+
+.footinner .fotlogo, .footinner .fotmap {
+    position: relative;
+    display: inline;
+    min-height: 157px;
+    float: left;
+}
+
+.footinner .fotlogo {
+    width: 200px;
+}
+
+.fotlogo dl {
+    padding: 0 20px;
+}
+.fotlogo dt {
+    padding-bottom: 10px;
+}
+.fotlogo dt a {
+    background: url(../img/head.png) no-repeat;
+    width: 136px;
+    height: 44px;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.fotlogo dd {
+    line-height: 1.8em;
+}
+
+.fotlogo .line, .fotmap .line {
+    background: url(../img/foot.png) -495px -9px no-repeat;
+    width: 1px;
+    height: 157px;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+.footinner .fotlogo, .footinner .fotmap {
+    position: relative;
+    display: inline;
+    min-height: 157px;
+    float: left;
+}
+
+.footinner .fotmap {
+    width: 501px;
+}
+
+.fotmap dl {
+    float: left;
+    display: inline;
+    margin-left: 55px;
+    line-height: 2em;
+}
+
+.fotmap dd {
+    font-size: 16px;
+    line-height: 2em;
+}
+
+.fotmap dd a{
+    font-size: 16px;
+    line-height: 2em;
+}
+
+.fotmap dl {
+    float: left;
+    display: inline;
+    margin-left: 55px;
+    line-height: 2em;
+}
+
+.footinner .ml30 {
+    margin-left: 30px;
+}
+
+.fotmap .rss, .fotmap .sina, .fotmap .weixin {
+    background: url(../img/foot.png) -140px -9px no-repeat;
+    width: 30px;
+    height: 30px;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.fotmap .weixin {
+    background-position: -170px -9px;
+}
+
+.fotmap .rss {
+    background-position: -200px -9px;
+}
+
+.footout .my_layer {
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0 0 3px rgba(0,0,0,.2);
+    position: absolute;
+    left: 445px;
+    top: -30px;
+    z-index: 17;
+}
+
+.none {
+    display: none;
+}
+
+.footout .my_layer .l_arrow {
+    background: url(../img/foot.png) -140px -60px no-repeat;
+    width: 21px;
+    height: 40px;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    margin-top: -20px;
+}
+
+.footout .my_layer .inner {
+    padding: 15px;
+    width: 195px;
+}
+
+.footout .my_layer i {
+    background: url(../img/foot.png) -640px -9px no-repeat;
+    width: 151px;
+    height: 151px;
+    display: block;
+    margin: 15px auto;
+}
+
+.footinner .fotweek {
+    width: 280px;
+    float: left;
+    display: inline;
+    min-height: 157px;
+}
+
+.fotweek dl {
+    width: 172px;
+    margin: 0 auto;
+}
+
+.fotweek dt span {
+    color: #7d7d7d;
+    padding-top: 3px;
+}
+
+.fothr dt strong, .fotweek dt strong {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.fotweek dd {
+    margin-top: 10px;
+}
+
+.fotweek img {
+    border: 1px solid #ccc;
+}
+
+.fotweek .input {
+    background: url(../img/foot.png) -330px -34px no-repeat;
+    width: 172px;
+    height: 25px;
+    position: relative;
+    zoom: 1;
+    padding-top: 2px;
+}
+
+.fotweek .input input {
+    background: 0 0;
+    width: 90px;
+    margin-left: 12px;
+    border: none;
+    height: 22px;
+}
+.c_a5 {
+    color: #a5a5a5;
+}
+
+.fotweek .input a {
+    background: url(../img/foot.png) -330px -9px no-repeat;
+    width: 54px;
+    height: 25px;
+    position: absolute;
+    right: 0;
+    top: 1px;
+    text-align: center;
+    color: #fff;
+    line-height: 25px;
+}
+
+
+.footinner .fothr {
+    width: 205px;
+    float: left;
+    display: inline;
+    min-height: 157px;
+    text-align: center;
+}
+
+.fothr dt {
+    color: #7d7d7d;
+}
+
+.fothr dt strong, .fotweek dt strong {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.fothr dt strong {
+    color: #333;
+    line-height: 1em;
+}
+
+.fothr dd {
+    margin-top: 12px;
+}
+
+
+.fothr i {
+    background: url(../img/foot.png) -795px -9px no-repeat;
+    width: 99px;
+    height: 99px;
+    margin: 0 auto;
+    display: block;
+}
+
+.db_foot, .db_foot a {
+    color: #7e7e7f;
+}
+
+.db_foot {
+    background: #f7f7f7;
+    text-align: center;
+    font-family: Verdana;
+    padding: 30px 0 20px;
+    line-height: 2em;
+    font-size: 12px;
+}
+.db_foot a, .db_foot span {
+    margin: 0 6px;
+}
+
+.credible {
+    text-align: center;
+    padding-top: 12px;
+}
+
+.credible a {
+    background: url(../img/foot.png) no-repeat;
+    display: inline-block;
+    width: 68px;
+    height: 25px;
+    position: relative;
+    zoom: 1;
+    vertical-align: middle;
+    margin-right: 15px;
+    overflow: hidden;
+}
+.credible a.credibler {
+    background-position: 0 -60px;
+}
+
+.credible a.goodfaith {
+    background-position: -68px -60px;
+    width: 70px;
+}
+
+.fr {
+    float: right;
+}
+
+.fix:after {
+    content: "";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}

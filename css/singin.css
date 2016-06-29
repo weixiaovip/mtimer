@@ -1,0 +1,539 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol,dl{
+    list-style: none;
+}
+
+input,img{
+    vertical-align: 0;
+    outline: none;
+}
+
+img {
+    background: url(../img/autoimg.png) center no-repeat #f2f2f2;
+    background-size: 50% auto;
+    vertical-align: middle;
+}
+
+label {
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    _top: 0;
+    left: 4px;
+    _left: 0;
+}
+
+
+/*h3 {*/
+/*display: block;*/
+/*font-size: 1.17em;*/
+/*-webkit-margin-before: 1em;*/
+/*-webkit-margin-after: 1em;*/
+/*-webkit-margin-start: 0px;*/
+/*-webkit-margin-end: 0px;*/
+/*font-weight: bold;*/
+/*}*/
+
+
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1f7dd7;
+}
+
+body,a{
+    color: #333;
+}
+
+body{
+    background: url(../img/html_bg.jpg);
+    font: 12px/150% helvetica,"微软雅黑","microsoft yahei",verdana,lucida,arial,sans-serif,"黑体";
+    color: #333;
+    min-width: 1200px;
+    zoom: 1;
+
+}
+
+.regin_out {
+    background: #fff;
+    width: 1000px;
+    margin: 100px auto 45px;
+    border-radius: 6px;
+    position: relative;
+    padding-bottom: 30px;
+    min-height: 600px;
+}
+
+.regin_line {
+    background: url(../img/reg24.png) no-repeat 0 0;
+    width: 1px;
+    height: 482px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+}
+
+.clearfix, .fix {
+    display: block;
+}
+
+.regin_inner {
+    padding: 30px 65px;
+}
+
+.regin_left {
+    float: left;
+    display: inline;
+    width: 380px;
+}
+
+.regin_inner h5 {
+    font-size: 30px;
+    line-height: 1em;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+.clearfix, .fix {
+    display: block;
+}
+
+.regin_tab dd.on {
+    color: #1689df;
+    border-bottom-color: #1689df;
+}
+.regin_tab dd {
+    width: 50%;
+    float: left;
+    display: inline;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    line-height: 2em;
+    font-weight: bold;
+    border-bottom: 2px solid #e5e5e5;
+    cursor: pointer;
+}
+
+.clearfix:after, .fix:after {
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+.reg_txt {
+    position: relative;
+    border: 1px solid #aaa;
+    zoom: 1;
+    height: 49px;
+    width: 375px;
+    margin-top: 23px;
+    border-radius: 4px;
+    vertical-align: baseline;
+    display: inline-block;
+    z-index: 2;
+}
+
+.reg_txt input {
+    background: url(../img/transparent.gif);
+    height: 21px;
+    border: 0;
+    padding: 14px;
+    line-height: 21px;
+    font-size: 14px;
+    width: 345px;
+}
+.c_a5, a.c_a5:hover {
+    color: #a5a5a5;
+}
+.reg_txt .reg_err {
+    display: none;
+}
+
+.reg_txt {
+    position: relative;
+    border: 1px solid #aaa;
+    zoom: 1;
+    height: 49px;
+    width: 375px;
+    margin-top: 23px;
+    border-radius: 4px;
+    vertical-align: baseline;
+    display: inline-block;
+    z-index: 2;
+}
+
+.reg_txt .reg_pw {
+
+    color: #a5a5a5;
+    position: absolute;
+    left: 15px;
+    top: 16px;
+    font-size: 14px;
+}
+
+.password_box {
+    color: #949494;
+    position: absolute;
+    right: 10px;
+    top: 11px;
+}
+
+.password_box i {
+    background: #c5c5c5;
+    overflow: hidden;
+    display: inline-block;
+    width: 14px;
+    height: 4px;
+    margin-right: 3px;
+    margin-top: 3px;
+}
+
+
+.pt35 {
+    padding-top: 35px;
+}
+
+.tc {
+    text-align: center;
+}
+
+.bind_telcode {
+    background: #f6f6f6;
+    height: 34px;
+    border: 1px solid #b6b6b6;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    font-size: 14px;
+    line-height: 34px;
+    padding: 0 15px;
+    color: #333;
+    border-radius: 3px;
+}
+
+.reg_selsex {
+    position: relative;
+    zoom: 1;
+    font-size: 14px;
+    padding-top: 25px;
+    color: #a5a5a5;
+}
+
+.reg_selsex span {
+    padding-right: 15px;
+}
+
+address, caption, cite, code, dfn, th, var, b, i, em {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.reg_checkbox {
+    background: url(../img/reg24.png) no-repeat -30px -231px;
+    width: 20px;
+    height: 17px;
+    position: relative;
+    zoom: 1;
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.reg_selsex .ico_female, .reg_selsex .ico_male {
+    background: url(../img/reg24.png) no-repeat -5px -210px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-left: 6px;
+    opacity: .5;
+    filter: alpha(opacity=50);
+}
+
+
+.reg_selsex span {
+    padding-right: 15px;
+}
+
+.reg_selsex .ico_male {
+    background-position: -21px -210px;
+}
+
+.reg_selsex p {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    color: #d21538;
+    font-size: 12px;
+}
+
+input, textarea {
+    font-family: "微软雅黑","microsoft yahei";
+    font-size: 12px;
+    padding: 2px;
+    vertical-align: middle;
+    outline: 0;
+}
+
+.bind_pro {
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+.bind_pro span {
+    background: url(../img/reg24.png) no-repeat -2px -24px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+
+.bind_pro a {
+    color: #0085e5;
+    line-height: 24px;
+}
+
+
+.bind_pro span.on {
+    background-position: -2px 0;
+}
+
+.regin_btn {
+    background: #0081bc;
+    width: 257px;
+    height: 53px;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+    font-size: 20px;
+    line-height: 53px;
+    border-radius: 27px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.regin_btn:hover {
+    background: #0379c8;
+    text-decoration: none;
+    color: white;
+}
+
+
+.regin_right {
+    float: right;
+    display: inline;
+    width: 380px;
+}
+
+.pt12 {
+    padding-top: 12px;
+}
+.pb3 {
+    padding-bottom: 3px;
+}
+.px16 {
+    font-size: 16px;
+}
+
+.reg_txtfalse p.reg_err {
+    display: block;
+    background: #ffebec;
+    width: 345px;
+    position: absolute;
+    left: -1px;
+    top: 50px;
+    border: 1px solid #e88a9b;
+    border-top: 0;
+    display: block;
+    color: #d84459;
+    line-height: 22px;
+    border-radius: 0 0 3px 3px;
+    padding: 0 15px;
+}
+
+.reg_txt .reg_err {
+    display: none;
+}
+
+.reg_txtfalse {
+    border: 1px solid #d21538;
+    height: 49px;
+}
+.bind_pro a {
+    color: #0085e5;
+    line-height: 24px;
+}
+.fr {
+    float: right;
+    _display: inline;
+}
+
+
+.bind_pro span {
+    background: url(../img/reg24.png) no-repeat -2px -24px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.mtb10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.c_red {
+    color: red;
+}
+
+.c_red, a.c_red:hover {
+    color: #ca4004;
+}
+
+.mtb10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.regin_log3 {
+    padding-top: 35px;
+    text-align: center;
+}
+
+
+.regin_log3 dt {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+.regin_log3 dd {
+    padding-top: 25px;
+}
+
+
+.regin_log3 a {
+    background: url(http://static1.mtime.cn/passport/20160608110208/images/reg24.png) no-repeat 0 0;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.regin_log3 a.sina {
+    background-position: -2px -48px;
+    width: 52px;
+    height: 50px;
+}
+
+
+.regin_log3 a.qq {
+    background-position: -2px -98px;
+    width: 51px;
+    height: 50px;
+}
+
+.reg_txtfalse {
+    border: 1px solid #d21538;
+    height: 49px;
+}
+
+
+.reg_checkbox.on {
+    background-position: -5px -231px;
+}
+
+.reg_selsex .checkend {
+    color: #333;
+}
+
+.reg_selsex .checkend .ico_male, .reg_selsex .checkend .ico_female {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.init-field-focus, .init-texts-focus, .init-texts-focus span {
+    border-color: #6a953b;
+    -webkit-box-shadow: 0 0 5px #6a953b;
+    -moz-box-shadow: 0 0 5px #6a953b;
+    box-shadow: 0 0 5px #6a953b;
+    color: #000;
+    background: #fff;
+}
+
+.reg_txtfalse {
+    border: 1px solid #d21538;
+    height: 49px;
+}
+
+/*密码强度弱*/
+.password_l i.ps1 {
+    background: #ca4004;
+}
+
+/*密码强度中*/
+.password_m i.ps1, .password_m i.ps2 {
+    background: #e7ae1f;
+}
+
+/*密码强度高*/
+.password_h i {
+    background: #5c961d;
+}
+
+.relative{
+    position: relative;
+}
+
+.ml12 {
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 170px;
+    height: 60px;
+    margin-left: 12px;
+}
+
+.mr6 {
+    margin-right: 6px;
+}
+.v_m {
+    vertical-align: middle;
+}
+
+.px12 {
+
+    font-size: 12px;
+}
+.normal {
+    font-weight: normal;
+    font-style: normal;
+}
+
