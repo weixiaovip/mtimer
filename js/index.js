@@ -224,13 +224,11 @@
             //列表2按钮的左右切换
             var changes = 960; //变化的幅度
             var totalWidth = utils.css(oMovieListOnNext, 'width') - 1200;
-            console.log(oMovieListOnNext);
-            console.log(totalWidth);
+
 
             oBtnPrev2.onclick = function () {
 
                 var targetWidth = utils.css(oMovieListOnNext, 'left') + changes;
-                console.log(targetWidth);
                 if (targetWidth >= 0) {
                     oBtnPrev2.style.display = 'none';
                     oShadowLeft2.style.display = 'none';
@@ -245,7 +243,6 @@
 
             oBtnNext2.onclick = function () {
                 var targetWidth = utils.css(oMovieListOnNext, 'left') - changes;
-                console.log(targetWidth);
                 if (targetWidth <= -totalWidth) {
                     targetWidth = -totalWidth;
                     oBtnNext2.style.display = 'none';
@@ -281,7 +278,6 @@
                 }
             };
 
-            console.log(utils.css(document.documentElement, 'scrollTop'));
             oTopBar.onclick = function () {
                 utils.getWin('scrollTop', 0);
             }
@@ -316,7 +312,6 @@
             var aSingle = oCommentsTop.getElementsByTagName('dd');
             var oBtnL = utils.getElesByClass(oCommentsTop,'lastpic')[0];
             var oBtnR = utils.getElesByClass(oCommentsTop,'nextpic')[0];
-            console.log(oBtnR);
             var oCarouselCommet = new packUtils.Carousel(oCommentsTop,aSingle,2000,null,oBtnL,oBtnR);
         })();
 
@@ -328,6 +323,13 @@
             var aContent = utils.getElesByClass(oRankList,'boxofficelist');
             var oTab = new packUtils.TabControl(aItem,aContent,'onmouseenter','cur');
         })();
+
+
+        //输入框中输入文字，调用百度jsonp实现搜索
+        var oInput = document.getElementById('searchInput');
+        var oSearchBar = document.getElementById('searchbtn');
+        var oUl = document.getElementById('hotSearch');
+        packUtils.jsonpBaiduSearch(oInput, oSearchBar, oUl, 'bg');
 
     });
 

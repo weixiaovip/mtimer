@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/foot.css">
     <script src="js/utils.js"></script>
     <script src="js/animate.js"></script>
+    <script src="js/jsonp.js"></script>
     <script src="js/packUtils.js"></script>
     <script src="js/header.js"></script>
     <script src="js/index.js"></script>
@@ -46,6 +47,7 @@
                 </div>
                 <input type="text" placeholder="搜索电影、影院、影人、商品...">
                 <a href="javascript:;" class="searchboxBtn select"><i></i></a>
+
             </div>
 
             <div class="headRight">
@@ -115,10 +117,16 @@
                     <li data-searchtype="5" data-searchtypecn="新闻" data-pan="M16_HeadNav_Search_type5">新闻</li>
                 </ul>
             </div>
-            <input type="text" class="text" value="天若有情" data-default="天若有情" data-showkeyword="天若有情"/>
-            <a href="javascript:;" class="button" title="搜索" id="searchbtn" data-pan="M16_HeadNav_Search_Btn_0">
+            <input id="searchInput"  type="text" class="text" value="天若有情" data-default="天若有情" data-showkeyword="天若有情"/>
+            <a href="javascript:;" class="button" title="搜索" id="searchbtn" data-pan="M16_HeadNav_Search_Btn_0" >
                 <i></i>
             </a>
+            <dl class="hotSearch" id="hotSearch">
+                <dd>搜索词1</dd>
+                <dd>搜索词2</dd>
+                <dd>搜索词3</dd>
+                <dd>搜索词4</dd>
+            </dl>
         </div>
 
     </div>

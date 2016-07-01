@@ -191,6 +191,41 @@ body{
     background-position: -134px -45px;
 }
 
+
+.topsearch .hotSearch{
+    display: none;
+    border: 1px solid #aaa;
+    position: absolute;
+    top: 38px;
+    width: 500px;
+
+    background: #fff;
+    z-index: 20;
+}
+
+.topsearch .hotSearch:after{
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.topsearch .hotSearch dd{
+    display: block;
+    float: none;
+    height: 35px;
+    line-height: 35px;
+    text-indent: 15px;
+    border-bottom: 1px solid #aaa;
+}
+
+.topsearch .hotSearch dd:hover,.topsearch .hotSearch dd.bg{
+    background: #eee;
+    color: #ff6600;
+}
+
+
+
+
 /*轮播图*/
 .carousel{
     margin: 0 auto;

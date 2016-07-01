@@ -253,6 +253,7 @@
     margin: -10px 0 0 -10px;
 }
 
+
 .searchbox .searchboxBtn.select{
     background-color: #1e7dd7;
 }
@@ -260,8 +261,6 @@
 .searchbox .searchboxBtn.select i{
     background-position: -134px -45px;
 }
-
-
 
 .headtool .headzoom em {
     background: url(../img/head.png) -75px -45px no-repeat;
