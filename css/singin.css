@@ -60,6 +60,10 @@ body{
 
 }
 
+.headerOut .headerContent dl dd a i.show{
+    display: none;
+}
+
 .regin_out {
     background: #fff;
     width: 1000px;
