@@ -210,6 +210,7 @@ var packUtils = (function(){
     //百度搜索热词jsonp接口
     var jsonpBaiduSearch = (function () {
         var word = null; //记录最后一次搜索的词
+        var timer = null; //输入框失去焦点的定时器
         //工具函数
         var tools = (function () {
             //百度搜索的jsonp接口
@@ -312,7 +313,12 @@ var packUtils = (function(){
 
             //失去焦点时让ul隐藏
             oInput.onblur = function(){
-                oUl.style.display = 'none';
+                clearTimeout(timer);
+                //延迟200ms，解决input失去焦掉ul就立即隐藏问题
+                timer = setTimeout(function(){
+                    oUl.style.display = 'none';
+                },200);
+
             };
 
 
